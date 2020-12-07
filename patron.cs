@@ -6,7 +6,7 @@ namespace RentalApp
 
 {
 
-internal class Patron : Person
+internal class Patron
 
 {
 

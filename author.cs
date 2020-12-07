@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 using System.Globalization;
 
-public class Author:Person
+public class Author
 
 {
 
