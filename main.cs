@@ -1,48 +1,50 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Library
+namespace RentalApp
+
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            LibraryCollection collection = new LibraryCollection();
 
-            Patron p1 = new Patron("Tim", "Smith", "1111");
-            Patron p2 = new Patron("Connor", "Walsh", "2222");
-            Patron p3 = new Patron("Ken", "Adams", "3333");
-            Patron p4 = new Patron("Cisco", "Ramon", "4444");
-            Patron p5 = new Patron("Oliver", "Queen", "5555");
+internal class Program
 
-            collection.AddPatron(p1);
-            collection.AddPatron(p2);
-            collection.AddPatron(p3);
-            collection.AddPatron(p4);
-            collection.AddPatron(p5);
+{
 
-            collection.RemovePatron(p5);
+private static void Main(string[] args)
 
-            collection.DisplayPatronInfo();
-
-            
-
-            collection.DisplayCollection();
-            
-
-            collection.DisplayCollection();
-
-            
-
-            collection.DisplayCollection();
-
-            collection.ProcessRental(p1);
-
-            collection.DisplayCollection();
-            
+{
 
 
-        }
-    }
+var book1 = new Book(1, "Harry Potter");
+
+var book2 = new Book(2, "Harry Potter");
+
+var book3 = new Book(3, "Harry Potter");
+
+
+var p1 = new Patron("Tim", "Smith", "1111");
+
+var p2 = new Patron("Connor", "Walsh", "2222");
+
+var p3 = new Patron("Ken", "Adams", "3333");
+
+var p4 = new Patron("Cisco", "Ramon", "4444");
+
+var p5 = new Patron("Oliver", "Queen", "5555");
+
+p1.AddToRentalCart(book3, DateTime.Parse("12/08/2020"));
+
+
+p1.AddToRentalCart(book1, DateTime.Parse("12/15/2020"));
+
+
+p1.RemoveFromRentalCart(book3);
+
+
+p1.Display();
+
+Console.Read();
+
+}
+
+}
+
 }
