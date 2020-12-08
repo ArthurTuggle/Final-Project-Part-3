@@ -1,5 +1,4 @@
 using System;
-
 using System.Collections.Generic;
 
 namespace RentalApp
@@ -19,28 +18,19 @@ List rentalCart;
 
 int fineAmountDue;
 
-
 public Patron(string firstName, string lastName, string libraryId) : base(firstName, lastName)
-
 {
-
 this.fineAmountDue = 0;
-
 this.libraryId = libraryId;
-
 this.startDate = DateTime.Today;
-
 this.isAccountActive = true;
-
 rentalCart = new List();
 }
 
 public void Display()
 {
-
 Console.WriteLine("Patron Id=" + this.libraryId + " Name=" + base.FirstName + " " + base.LastName);
 }
-
 public void AddToRentalCart(Book book, DateTime dateDue)
 {
 Rental obj = new Rental(book, dateDue);
@@ -61,7 +51,5 @@ break;
 }
 Console.WriteLine("Removed from rental cart " + book.BookName + " Book " + book.BookId + " for Patron " + base.FirstName + " " + base.LastName);
 }
-
 }
-
 }
