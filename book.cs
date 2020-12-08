@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 
@@ -13,7 +12,7 @@ string author_info;
 
 DateTime published_on;
 
-string published_by="Unknown";
+string published_by="";
 
 public Book(string isbn,string title,string author_info){
 

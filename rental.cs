@@ -1,7 +1,6 @@
 using System;
 
 namespace RentalApp
-
 {
 internal class Rental
 {
