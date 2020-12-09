@@ -4,7 +4,7 @@ using System.Globalization;
 public class Author
 
 {
-private List book=new List();
+private list book=new List();
 public Author(string fname,string lname,string email):base(fname,lname,email){}
 public void DisplayInfo(){
 Console.WriteLine(fname+" "+lname+" "+email);
